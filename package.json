@@ -114,5 +114,8 @@
   ],
   "directories": {
     "example": "examples"
+  },
+  "dependencies": {
+    "@react-hook/resize-observer": "^1.2.0"
   }
 }

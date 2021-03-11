@@ -3,22 +3,16 @@
   display: flex !important;
   flex-direction: row !important;
   position: relative;
-  height: 100%;
   width: 100%;
-
-  &:hover div {
-    animation-play-state: var(--pause-on-hover);
-  }
-
-  &:active div {
-    animation-play-state: var(--pause-on-click);
-  }
 }
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
 
   @mixin gradient {
     background: linear-gradient(to right, var(--gradient-color));
@@ -31,7 +25,6 @@
     height: 100%;
     position: absolute;
     width: var(--gradient-width);
-    z-index: 2;
   }
 
   &::after {
@@ -47,9 +40,14 @@
 }
 
 .marquee {
+  flex: 0 0 auto;
+  min-width: 100%;
+
+  z-index: 1;
+
   display: flex;
   flex-direction: row;
-  margin-right: var(--margin-right);
+  align-items: center;
   animation: scroll var(--duration) linear var(--delay) infinite;
   animation-play-state: var(--play);
   animation-delay: var(--delay);
@@ -60,7 +58,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-100% - var(--margin-right)));
+      transform: translateX(-100%);
     }
   }
 }
