@@ -1,0 +1,22 @@
+.marqueeClass {
+  border: 1px dashed gray;
+  border-radius: 5px;
+  font-family: sans-serif;
+  padding: 5px 0;
+}
+
+.innerSpan {
+  padding: 0.3em 1.5em;
+  margin-right: 1em;
+  border-radius: 5px;
+  background: lightpink;
+}
+
+.innerSpan:first-of-type {
+  background: salmon;
+}
+
+.sepparatorImg {
+  margin-right: 1em;
+  height: 1em;
+}

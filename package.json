@@ -9,7 +9,9 @@
     "lint": "eslint \"src/**/*.{js,tsx}\" --fix --quiet",
     "pretest": "npm run lint",
     "test": "node ./__tests__/tests.js",
-    "no-watch-test": "node ./__tests__/tests.js --no-watch"
+    "no-watch-test": "node ./__tests__/tests.js --no-watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "jest": {
     "globals": {
@@ -63,6 +65,8 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.20",
     "@types/react": "^16.9.52",
@@ -70,6 +74,8 @@
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
     "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-scss": "^1.0.9",
     "babel-runtime": "^6.26.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",

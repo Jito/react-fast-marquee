@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState, useRef } from "react";
 import "./Marquee.scss";
 
-interface MarqueeProps {
+export interface MarqueeProps {
   /**
    * Inline style for the container div
    * Type: object
